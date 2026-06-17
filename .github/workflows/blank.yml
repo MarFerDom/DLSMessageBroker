@@ -28,6 +28,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v5
 
+      # Debugging step: checks node version. Should be v24 or up
+      - name: Check Node Version
+        run: node -v
+        
       # Sets up python in running os
       - name: Set up Python 3.x
         uses: actions/setup-python@v4
