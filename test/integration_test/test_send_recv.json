@@ -1,0 +1,9 @@
+{
+    "test_io" : [
+        {
+            "name":"test_write_small_log",
+            "payload": "This is a small log",
+            "response": "This is a small log"
+        }
+    ]
+}
