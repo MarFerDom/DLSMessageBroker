@@ -104,4 +104,4 @@ jobs:
 
       # Step 3: Run your integration test suite (which acts as a mock client)
       - name: Run Integration Tests
-        run: pytest ./tests/integration_test/test_server.py
+        run: pytest test/integration_test/test_server.py
