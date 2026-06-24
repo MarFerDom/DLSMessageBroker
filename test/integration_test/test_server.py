@@ -6,7 +6,7 @@ from os import path, getenv, getcwd
 from sys import argv, _getframe
 
 HOST = getenv("HOST") or "127.0.0.1"
-PORT = getenv("PORT") or 65000
+PORT = int(getenv("PORT") or 65000)
 # path.dirname(argv[0]) does not work because of env
 REQ_RESP_FILEPATH = path.join(getcwd(), 'test', 'integration_test', 'test_send_recv.json')
 
