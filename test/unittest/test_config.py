@@ -2,7 +2,9 @@ import pytest
 from src.logger.config import config
 
 def test_config_create():
-    pass
+    from os.path import exists
+    assert exists(config._CONFIG_FULL_PATH_), \
+        f"Unable to find config file in {config._CONFIG_PATH_}"
 
 def test_update():
     from json import load
